@@ -41,7 +41,7 @@ app.get("/api/health", (req, res) => {
 
 // MongoDB connection
 mongoose
-  .connect(process.env.MONGO_URI || "mongodb://localhost:27017/loveable")
+  .connect(process.env.MONGO_URI || "mongodb+srv://Navneet:navneet123@navneet.ehuztto.mongodb.net/loveable?retryWrites=true&w=majority")
   .then(() => {
     console.log("✅ MongoDB connected");
     app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
